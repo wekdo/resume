@@ -154,15 +154,6 @@
             width: 1px;
         }
 
-        .node-dot {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: var(--node-line);
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-        }
-
         .node-label {
             position: absolute;
             padding: 8px 16px;
@@ -307,36 +298,8 @@
             left: 5%;
         }
 
-        .about-decor-dot {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: var(--node-line);
-            border-radius: 50%;
-        }
-
         /* Line 1: vertical, right:10% - dots at top and bottom */
-        .about-decor-dot.dot-1 {
-            top: 46px;
-            right: calc(10% - 3px);
-        }
-
-        .about-decor-dot.dot-2 {
-            top: 196px;
-            right: calc(10% - 3px);
-        }
-
         /* Line 2: horizontal, left:5%, bottom:100px - dots at left and right ends */
-        .about-decor-dot.dot-3 {
-            bottom: 96px;
-            left: calc(5% - 4px);
-        }
-
-        .about-decor-dot.dot-4 {
-            bottom: 96px;
-            left: calc(5% + 96px);
-        }
-
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -450,30 +413,7 @@
             right: 0;
         }
 
-        .tools-decor-dot {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: var(--node-line);
-            border-radius: 50%;
-        }
-
         /* Line 1: vertical, top:0, left:15%, height:200px */
-        .tools-decor-dot.dot-1 { top: -4px; left: calc(15% - 3px); }
-        .tools-decor-dot.dot-2 { top: 196px; left: calc(15% - 3px); }
-        
-        /* Line 2: vertical, bottom:0, right:15%, height:200px */
-        .tools-decor-dot.dot-3 { bottom: 196px; right: calc(15% - 3px); }
-        .tools-decor-dot.dot-4 { bottom: -4px; right: calc(15% - 3px); }
-        
-        /* Line 3: horizontal, top:50%, left:0, width:150px */
-        .tools-decor-dot.dot-5 { top: calc(50% - 4px); left: -4px; }
-        .tools-decor-dot.dot-6 { top: calc(50% - 4px); left: 146px; }
-        
-        /* Line 4: horizontal, top:50%, right:0, width:150px */
-        .tools-decor-dot.dot-7 { top: calc(50% - 4px); right: -4px; }
-        .tools-decor-dot.dot-8 { top: calc(50% - 4px); right: 146px; }
-
         .tools-grid {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -630,22 +570,7 @@
             right: 0;
         }
 
-        .contact-decor-dot {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: var(--node-line);
-            border-radius: 50%;
-        }
-
         /* Line 1: horizontal, top:50%, left:0, width:200px */
-        .contact-decor-dot.dot-1 { top: calc(50% - 4px); left: -4px; }
-        .contact-decor-dot.dot-2 { top: calc(50% - 4px); left: 196px; }
-        
-        /* Line 2: horizontal, top:50%, right:0, width:200px */
-        .contact-decor-dot.dot-3 { top: calc(50% - 4px); right: -4px; }
-        .contact-decor-dot.dot-4 { top: calc(50% - 4px); right: 196px; }
-
         .contact-decor-circle {
             position: absolute;
             width: 300px;
@@ -861,12 +786,9 @@
             /* Hide decorative elements on mobile */
             .about-decor-circle,
             .about-decor-line,
-            .about-decor-dot,
             .tools-decor-line,
-            .tools-decor-dot,
             .projects-decor-circle,
             .contact-decor-line,
-            .contact-decor-dot,
             .contact-decor-circle {
                 display: none;
             }
@@ -911,22 +833,6 @@
             <div class="node-line horizontal" style="top: 50%; left: 0; width: 15%;"></div>
             <div class="node-line horizontal" style="top: 50%; right: 0; width: 15%;"></div>
             
-            <div class="node-line vertical" style="left: 25%; top: 20%; height: 30%;"></div>
-            <div class="node-line vertical" style="right: 25%; top: 20%; height: 30%;"></div>
-            <div class="node-line vertical" style="left: 30%; top: 50%; height: 30%;"></div>
-            <div class="node-line vertical" style="right: 35%; top: 50%; height: 30%;"></div>
-            
-            <div class="node-dot" style="top: 20%; left: 5%;"></div>
-            <div class="node-dot" style="top: 20%; left: 25%;"></div>
-            <div class="node-dot" style="top: 20%; right: 25%;"></div>
-            <div class="node-dot" style="top: 20%; right: 5%;"></div>
-            <div class="node-dot" style="top: 50%; left: 25%;"></div>
-            <div class="node-dot" style="top: 50%; right: 25%;"></div>
-            <div class="node-dot" style="top: 80%; left: 10%;"></div>
-            <div class="node-dot" style="top: 80%; left: 30%;"></div>
-            <div class="node-dot" style="top: 80%; right: 35%;"></div>
-            <div class="node-dot" style="top: 80%; right: 10%;"></div>
-            
             <div class="node-label" style="top: 17%; left: 3%;">Web Dev</div>
             <div class="node-label" style="top: 17%; right: 3%;">3D Design</div>
             <div class="node-label" style="top: 77%; left: 8%;">AI</div>
@@ -959,11 +865,6 @@
         <div class="about-decor-circle circle-2"></div>
         <div class="about-decor-line line-1"></div>
         <div class="about-decor-line line-2"></div>
-        <div class="about-decor-dot dot-1"></div>
-        <div class="about-decor-dot dot-2"></div>
-        <div class="about-decor-dot dot-3"></div>
-        <div class="about-decor-dot dot-4"></div>
-
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
@@ -989,15 +890,6 @@
         <div class="tools-decor-line line-2"></div>
         <div class="tools-decor-line line-3"></div>
         <div class="tools-decor-line line-4"></div>
-        <div class="tools-decor-dot dot-1"></div>
-        <div class="tools-decor-dot dot-2"></div>
-        <div class="tools-decor-dot dot-3"></div>
-        <div class="tools-decor-dot dot-4"></div>
-        <div class="tools-decor-dot dot-5"></div>
-        <div class="tools-decor-dot dot-6"></div>
-        <div class="tools-decor-dot dot-7"></div>
-        <div class="tools-decor-dot dot-8"></div>
-
         <div class="container">
             <div class="section-header">
                 <p class="section-tag">Stack</p>
@@ -1114,12 +1006,6 @@
         <!-- Decorative elements -->
         <div class="contact-decor-line line-1"></div>
         <div class="contact-decor-line line-2"></div>
-        <div class="contact-decor-dot dot-1"></div>
-        <div class="contact-decor-dot dot-2"></div>
-        <div class="contact-decor-dot dot-3"></div>
-        <div class="contact-decor-dot dot-4"></div>
-        <div class="contact-decor-circle"></div>
-
         <div class="container">
             <div class="contact-content">
                 <h2 class="contact-title">Давайте создадим что-то вместе</h2>
